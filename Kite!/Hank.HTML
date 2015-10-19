@@ -1,0 +1,79 @@
+<html>
+<head>
+   <link rel="icon" href="Images/hangmanicon.png">
+   <link rel="Stylesheet" href="HangmanKB.css">
+
+
+    <title>Hangman</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hangman!</h1>
+    </header>
+    <div>
+     <form name="form">
+    <p>What be your name?</p>
+    <input type="text" name="fullName">
+    <input type="button" value="Submit" onclick="greet()">
+    <p id="hello"></p>
+         <p id="test"></p>
+        <p id="test2"></p>
+    <input type="button" value="click" onclick="blankify()">
+    <input type="text" name="letters">
+    </form>
+    </div>
+    
+    <div>
+
+    </div>
+    <div>
+    <img src="Images/Hangmanoutline2.jpg" height = "400" width="400">
+    </div>
+</body>
+    
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.js"></script>
+    <script> 
+        
+words[];
+        
+function greet()
+        {
+        $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
+        }
+
+function blankify()
+{
+    var phraseLetters = new Array();
+    var phraseAsBlanks = new Array(); 
+    var tempPhrase = "Hey guys";
+    for (var i = 0; i < tempPhrase.length; i++)
+        {
+        phraseLetters.push(tempPhrase.substring(i, i+1));
+        }
+    for (var i = 0; i < tempPhrase.length; i++)
+        {
+        if(tempPhrase.substring(i, i+1) == " ")
+            {
+            phraseAsBlanks.push("/");
+            }
+        else
+            {
+            phraseAsBlanks.push("_ ");
+            }
+        }
+    $('#test').text(phraseLetters);
+    $('#test2').append(phraseAsBlanks);
+    for (var i = 0; i < phraseLetters.length; i++)
+        {
+        if(phraseLetters[i] === document.form.fullName.value)
+            {
+            $('#test').text(document.form.fullName.value);
+            }
+        }
+}
+    
+    </script>
+	
+   
+</html>
