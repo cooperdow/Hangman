@@ -1,4 +1,4 @@
-var phrase = ["synergy"];
+var phrase = ["good synergy"];
 function greet()
         {
         $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
@@ -8,13 +8,14 @@ function blankify()
     var phraseLetters = new Array();
     var phraseAsBlanks = new Array(); 
 //     var tempPhrase = "Hey guys";
-    for (var i = 0; i < phrase.length; i++)
+    for (var i = 0; i < phraseLetters.length; i++)
         {
-        phraseLetters.push(phrase.substring(i, i+1));
+        phraseLetters.push(phraseLetters.substring(i, i+1));
         }
-    for (var i = 0; i < phrase.length; i++)
+    for (var i = 0; i < phraseLetters.length; i++)
         {
-        if(tempPhrase.substring(i, i+1) == " ")
+        if(phrase.substring(i, i+1) == " ")
+//changed above line from tempPhrase to phrase (testing how we will add the words array)
             {
             phraseAsBlanks.push("/");
             }
@@ -27,7 +28,8 @@ function blankify()
     $('#test2').append(phraseAsBlanks);
     for (var i = 0; i < phraseLetters.length; i++)
         {
-        if(phraseLetters[i] === document.form.fullName.value)
+        if(phraseLetters[i] == document.form.fullName.value)
+//changed above line from = x3 to = x2
             {
             $('#test').text(document.form.fullName.value);
             }
