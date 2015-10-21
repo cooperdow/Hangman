@@ -1,4 +1,4 @@
-var phrase = ["goosebumps", "synergy","jazz","der"]
+var phrase = ["goosebumps", "synergy","jazz","der"];
 function greet()
         {
         $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
