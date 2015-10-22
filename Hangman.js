@@ -1,9 +1,9 @@
 var phrase = ["good synergy"];
 
-$("#nameButton").on("click", function()
-    {
-      $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
-    });
+function greet()
+{
+    $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
+}
 
 function blankify()
 {
