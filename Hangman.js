@@ -9,7 +9,7 @@ function blankify()
 {
     var phraseLetters = new Array();
     var phraseAsBlanks = new Array(); 
-    var tempPhrase = "Hey guys";
+    // var tempPhrase = "Hey guys";
     for (var i = 0; i < phraseLetters.length; i++)
         {
         phraseLetters.push(phraseLetters.substring(i, i+1));
@@ -26,7 +26,7 @@ function blankify()
             phraseAsBlanks.push("_ ");
             }
         }
-    $('#test').text(phraseLetters);
+    $('#test').text(phraseLetters.toString());
     $('#test2').append(phraseAsBlanks);
     for (var i = 0; i < phraseLetters.length; i++)
         {
@@ -35,4 +35,6 @@ function blankify()
             $('#test').text(document.form.fullName.value);
             }
         }
+       Hey guys
+        _ _ _ / _ _ _ _
 }
