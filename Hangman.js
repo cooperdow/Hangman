@@ -26,8 +26,11 @@ function blankify()
             phraseAsBlanks.push("_ ");
             }
         }
+        alert(phraseLetters.toString());
     $('#test').text(phraseLetters.toString());
+    
     $('#test2').append(phraseAsBlanks);
+    
     for (var i = 0; i < phraseLetters.length; i++)
         {
         if(phraseLetters[i] === document.form.fullName.value)
@@ -35,6 +38,4 @@ function blankify()
             $('#test').text(document.form.fullName.value);
             }
         }
-       Hey guys
-        _ _ _ / _ _ _ _
 }
