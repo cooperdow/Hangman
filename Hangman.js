@@ -42,7 +42,6 @@ function blankify()
 
 function compWord()
     {
-    alert();
     var rand=Math.floor(Math.random()*words.length);
    
     alert( words[rand]);
