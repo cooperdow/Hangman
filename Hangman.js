@@ -21,7 +21,7 @@ function blankify()
             }
         else
             {
-            phraseAsBlanks.push("_ ");
+            phraseAsBlanks.push("_");
             }
         }
     phraseAsBlanks = phraseAsBlanks.join(" ");
