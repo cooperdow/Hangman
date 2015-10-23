@@ -38,4 +38,13 @@ function blankify()
 //            $('#test2').prop('outerHTML', phraseAsBlanks);
             }
         }
-}
+    }
+
+function compWord()
+    {
+    alert();
+    var rand=Math.floor(Math.random()*words.length);
+   
+    alert( words[rand]);
+    blankify();
+    }
