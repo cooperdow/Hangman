@@ -8,13 +8,13 @@ function blankify()
     var phraseLetters = new Array();
     var phraseAsBlanks = new Array();
 //    for (var i = 0; i < phraseLetters.length; i++) <--original line
-      for (var i = 0; i < document.form.letters.value.length; i++)
+      for (var i = 0; i < words.length; i++)
         {
-            phraseLetters.push(document.form.letters.value.substring(i, i+1));
+            phraseLetters.push(words.substring(i, i+1));
         }
-    for (var i = 0; i < document.form.letters.value.length; i++)
+    for (var i = 0; i <words.length; i++)
         {
-        if(document.form.letters.value.substring(i, i+1) == " ")
+        if(words.substring(i, i+1) == " ")
 
             {
             phraseAsBlanks.push("-");
@@ -43,7 +43,15 @@ function blankify()
 function compWord()
     {
     var rand=Math.floor(Math.random()*words.length);
-   
     alert( words[rand]);
     blankify();
     }
+
+lines 11-->17
+  for (var i = 0; i < document.form.letters.value.length; i++)
+        {
+            phraseLetters.push(document.form.letters.value.substring(i, i+1));
+        }
+    for (var i = 0; i < document.form.letters.value.length; i++)
+        {
+        if(document.form.letters.value.substring(i, i+1) == " ")
