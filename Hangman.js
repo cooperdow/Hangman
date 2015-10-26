@@ -1,3 +1,5 @@
+var rand;
+
 function greet()
 {
     $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
@@ -8,13 +10,13 @@ function blankify()
     var phraseLetters = new Array();
     var phraseAsBlanks = new Array();
 //    for (var i = 0; i < phraseLetters.length; i++) <--original line
-      for (var i = 0; i < words.length; i++)
+      for (var i = 0; i < words[rand].length; i++)
         {
-            phraseLetters.push(words.substring(i, i+1));
+            phraseLetters.push(words[rand].substring(i, i+1));
         }
-    for (var i = 0; i <words.length; i++)
+    for (var i = 0; i <words[rand].length; i++)
         {
-        if(words.substring(i, i+1) == " ")
+        if(words[rand].substring(i, i+1) == " ")
 
             {
             phraseAsBlanks.push("-");
@@ -42,16 +44,16 @@ function blankify()
 
 function compWord()
     {
-    var rand=Math.floor(Math.random()*words.length);
-    alert( words[rand]);
+    rand=Math.floor(Math.random()*words.length);
+    alert(words[rand]);
     blankify();
     }
 
-lines 11-->17
-  for (var i = 0; i < document.form.letters.value.length; i++)
-        {
-            phraseLetters.push(document.form.letters.value.substring(i, i+1));
-        }
-    for (var i = 0; i < document.form.letters.value.length; i++)
-        {
-        if(document.form.letters.value.substring(i, i+1) == " ")
+//lines 11-->17
+//  for (var i = 0; i < document.form.letters.value.length; i++)
+//        {
+//            phraseLetters.push(document.form.letters.value.substring(i, i+1));
+//        }
+//    for (var i = 0; i < document.form.letters.value.length; i++)
+//        {
+//        if(document.form.letters.value.substring(i, i+1) == " ")
