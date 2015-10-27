@@ -8,11 +8,11 @@ $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman
 //function blankify()
 //{
 //    alert("l");
-//    var phraseLetters = [];
+//    var secretWordLetters = [];
 //    var tempPhrase = "Hey guys";
 //    for (var i = 0, i < tempPhrase.length, i++)
 //        {
-//            phraseLetters.push(tempPhrase.substring(i, i++);
+//            secretWordLetters.push(tempPhrase.substring(i, i++);
 //        }
 //    $("#test").text("hey");
 //}
