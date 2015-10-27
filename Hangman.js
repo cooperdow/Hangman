@@ -62,4 +62,5 @@ function guess()
 {
     var $guess = $('#letterGuess');
     alert($guess);
+    alert($("#letterGuess"));
 }
