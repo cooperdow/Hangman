@@ -38,13 +38,15 @@ function compWord()
 
 function guess()
 {
-    var $guess = document.form2.letter.value;
-    alert($guess);
+    var guess = document.form2.letter.value;
+    alert(guess);
     for(var i =0; i< secretWordLetters.length; i++)
     {
-        if ($guess === words[rand].letter.valueOf())
+        if (guess === secretWordLetters[i])
         {
-            $guess.replace("_", $guess)
+            revealedLetters[i].replace("_", secretWordLetters[i])
         }
     }
+    alert(revealedLetters);
+    $('#test2').text(revealedLetters);
 }
