@@ -60,6 +60,6 @@ function compWord()
 
 function guess()
 {
-    var $guess = document.form.letter.value;
+    var $guess = document.form2.letter.value;
     alert($guess);
 }
