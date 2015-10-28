@@ -42,9 +42,9 @@ function guess()
     alert(guess);
     for(var i = 0; i< secretLetters.length; i++)
     {
-        if (guess == secretLetters[i])
+        if (guess === secretLetters[i])
         {
-            alert("heelo");
+            alert(secretLetters.indexOf(guess));
             revealedLetters.replace(revealedLetters.indexOf(i),secretLetters[i]);
         }
     }
