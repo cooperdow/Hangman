@@ -1,5 +1,5 @@
 var rand;
-var secretLetters = new Array();
+
 var revealedLetters = new Array();
 function greet()
 {
@@ -8,6 +8,7 @@ function greet()
 
 function blankify()
 {
+    secretLetters = new Array();
       for (var i = 0; i < words[rand].length; i++)
         {
             secretLetters.push(words[rand].substring(i, i+1));
@@ -40,11 +41,13 @@ function guess()
 {
     var guess = document.form2.letter.value;
     alert(guess);
+    alert(secretLetters);
     for(var i = 0; i< secretLetters.length; i++)
     {
         if (guess === secretLetters[i])
         {
-            alert(secretLetters.indexOf(guess));
+            alert(secretLetters[i]);
+            alert(revealedLetters.indexOf(secretLetters[i]));
             revealedLetters.replace(revealedLetters.indexOf(i),secretLetters[i]);
         }
     }
