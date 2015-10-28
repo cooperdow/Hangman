@@ -32,7 +32,7 @@ function blankify()
 function compWord()
     {
     rand=Math.floor(Math.random()*words.length);
-        alert(words[rand])
+    $('#test').text(words[rand]);
     blankify();
     }
 
