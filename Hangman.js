@@ -40,11 +40,12 @@ function guess()
 {
     var guess = document.form2.letter.value;
     alert(guess);
-    for(var i =0; i< secretLetters.length; i++)
+    for(var i = 0; i< secretLetters.length; i++)
     {
-        if (guess === secretLetters[i])
+        if (guess == secretLetters[i])
         {
-            revealedLetters[i].replace("_", secretLetters[i])
+            alert("heelo");
+            revealedLetters[i] = secretLetters[i];
         }
     }
     alert(revealedLetters);
