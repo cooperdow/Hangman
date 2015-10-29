@@ -19,7 +19,7 @@ function blankify()
         }
     revealedLetters = revealedLetters.join(" ");
       $('#test2').text(revealedLetters);
-     
+
     for (var i = 0; i < secretLetters.length; i++)
         {
         if(secretLetters[i] === document.form.letters.value)
@@ -30,12 +30,13 @@ function blankify()
     }
 
 function compWord()
-    {
+{
+    secretLetters=[];
+    revealedLetters=[];
     rand=Math.floor(Math.random()*words.length);
     $('#test').text(words[rand]);
     blankify();
-    }
-
+}
 
 function guess()
 {

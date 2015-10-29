@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="Hangman.css">
     <script src ="Hangman.js"></script>
     <script src="words.js"></script>
-   
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.js"></script>
     <title>Hangman</title>
 </head>
 <body>
@@ -24,9 +24,8 @@
 
       <p>Ready for the computer's word?</p>
          <p id="hidden"></p>
-
-    <input type="button" value="Click" onclick="compWord()">
-
+<!--<input type="reset" id="newWord" value="New Word">-->
+         <input type="button" value="New Word" onclick="compWord()">
     </form>
     </div>
     <form name="form2">
@@ -38,4 +37,4 @@
     <img src="Images/Hangmanoutline2.jpg" height = "400" width="400">
     </div>
 </body>
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.js"></script>
+
