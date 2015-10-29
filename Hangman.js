@@ -46,7 +46,7 @@ function guess()
     {
         if (guess === secretLetters[i])
         {
-            alert(secretLetters.indexOf(guess));
+            alert(i);
             revealedLetters.replace(revealedLetters.indexOf(i),secretLetters[i]);
         }
     }
