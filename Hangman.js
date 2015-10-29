@@ -17,7 +17,7 @@ function blankify()
         {
             revealedLetters.push("_");
         }
-    revealedLetters = revealedLetters.join(" ");
+    //revealedLetters = revealedLetters.join(" ");
       $('#test2').text(revealedLetters);
 
     for (var i = 0; i < secretLetters.length; i++)
@@ -47,10 +47,12 @@ function guess()
     {
         if (guess === secretLetters[i])
         {
+            var i = i;
             alert(i);
-            alert(revealedLetters.substring(i+1,i+2));
+            revealedLetters[i] = guess;
+            alert(revealedLetters[i]);
             alert(secretLetters[i]);
-            revealedLetters.replace(revealedLetters.substring(i,i++),secretLetters[i]);
+            revealedLetters[i] = guess;
         }
     }
     alert(revealedLetters);
