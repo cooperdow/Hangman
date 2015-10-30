@@ -60,10 +60,16 @@ function guess()
         if(counter == 0)
         {
             wrongGuesses = wrongGuesses + 1;
-            alert(wrongGuesses);
             $('#incorrectGuesses').text("Incorrect Guesses: " + wrongGuesses);
-        }
+        //if(counter==6)
+        //{
+        //    gameOver();
+        //}
 
     $('#test2').text(string);
 
 }
+//function gameOver()
+//{
+//    $('lose').text("You lose");
+//}
