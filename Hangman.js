@@ -57,6 +57,8 @@ function guess()
             }
             revealedLetters[i] = guess;
         }
+
+
     }
 
     $('#test2').text(string);
