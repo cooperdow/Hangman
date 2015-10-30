@@ -56,11 +56,15 @@ function guess()
         }
         else
         {
-            count=+1;
+            count++;
             $("#incorrectGuesses").text("Incorrect Guesses: " + count);
-            if (count=6)
+            if (count>=6)
             {
                 gameOver();
+            }
+            else if (count<6)
+            {
+                guess();
             }
         }
     }
@@ -70,5 +74,5 @@ function guess()
 
 function gameOver()
 {
-    //game is over
+    $('lose').text("Game Over")
 }
