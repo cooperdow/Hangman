@@ -43,27 +43,21 @@ function compWord()
 function guess()
 {
     var guess = document.form2.letter.value;
-    alert(guess);
-    alert(secretLetters);
     for(var i = 0; i< secretLetters.length; i++)
     {
         if (guess === secretLetters[i])
         {
             var i = i;
-            alert(i);
             revealedLetters[i] = guess;
-            alert(string);
             string = "";
             for(var j = 0; j < secretLetters.length; j++)
             {
 
-                string = string + revealedLetters[j];
+                string = string + revealedLetters[j] + " ";
             }
-            alert(revealedLetters[i]);
-            alert(secretLetters[i]);
             revealedLetters[i] = guess;
         }
     }
-    alert(revealedLetters);
+
     $('#test2').text(string);
 }
