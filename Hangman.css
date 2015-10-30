@@ -8,3 +8,8 @@ body
     text-align: center;
   background-image: url(Images/Hangmanbackground.jpg)
 }
+
+#incorrectGuesses
+{
+    color: red;
+}

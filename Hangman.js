@@ -1,5 +1,5 @@
 var rand;
-
+var wrongGuesses = 0;
 var revealedLetters = new Array();
 function greet()
 {
@@ -8,6 +8,7 @@ function greet()
 
 function blankify()
 {
+    string = new String();
     secretLetters = new Array();
       for (var i = 0; i < words[rand].length; i++)
         {
@@ -16,9 +17,10 @@ function blankify()
     for (var i = 0; i <words[rand].length; i++)
         {
             revealedLetters.push("_");
+            string = string + " _";
         }
     //revealedLetters = revealedLetters.join(" ");
-      $('#test2').text(revealedLetters);
+      $('#test2').text(string);
 
     for (var i = 0; i < secretLetters.length; i++)
         {
@@ -40,21 +42,28 @@ function compWord()
 
 function guess()
 {
+    var counter=0;
     var guess = document.form2.letter.value;
-    alert(guess);
-    alert(secretLetters);
     for(var i = 0; i< secretLetters.length; i++)
     {
-        if (guess === secretLetters[i])
-        {
+        if (guess === secretLetters[i]) {
+            counter = counter + 1;
             var i = i;
-            alert(i);
             revealedLetters[i] = guess;
-            alert(revealedLetters[i]);
-            alert(secretLetters[i]);
+            string = "";
+            for (var j = 0; j < secretLetters.length; j++) {
+                string = string + revealedLetters[j] + " ";
+            }
             revealedLetters[i] = guess;
         }
     }
-    alert(revealedLetters);
-    $('#test2').text(revealedLetters);
+        if(counter == 0)
+        {
+            wrongGuesses = wrongGuesses + 1;
+            alert(wrongGuesses);
+            $('#incorrectGuesses').text("Incorrect Guesses: " + wrongGuesses);
+        }
+
+    $('#test2').text(string);
+
 }
