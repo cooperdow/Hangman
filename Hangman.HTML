@@ -1,6 +1,6 @@
 <html>
 <head>
-   <link rel="icon" href="Images/hangmanicon.png">
+    <link rel="icon" href="Images/hangmanicon.png">
     <link rel="stylesheet" href="Hangman.css">
     <script src ="Hangman.js"></script>
     <script src="words.js"></script>
@@ -8,36 +8,35 @@
     <title>Hangman</title>
 </head>
 <body>
-    <header>
-        <h1>The Hangman</h1>
-    </header>
-    <div>
-     <form name="form">
-    <p>What be your name?</p>
-    <input type="text" name="fullName">
-    <input type="button" value="Submit" onclick="greet()">
-    <p id="hello"></p>
-   <p id="test"></p>
-    <p id="test2"></p>
-      
-       <br>
+<header>
+    <h1>The Hangman</h1>
+</header>
+<div>
+    <form name="form">
+        <p>What be your name?</p>
+        <input type="text" name="fullName">
+        <input type="button" value="Submit" onclick="greet()">
+        <p id="hello"></p>
+        <p id="test"></p>
+        <p id="test2"></p>
+
+        <br>
 
 
-         <p id="hidden"></p>
-<!--<input type="reset" id="newWord" value="New Word">-->
-         <input type="button" value="New Word" onclick="compWord()">
+        <p id="hidden"></p>
+        <!--<input type="reset" id="newWord" value="New Word">-->
+        <input type="button" value="New Word" onclick="compWord()">
     </form>
 
-        <p id="incorrectGuesses">Incorrect Guesses: </p>
+    <p id="incorrectGuesses">Incorrect Guesses: </p>
 <p id="lose"></p>
-    </div>
-    <form name="form2">
-        <p>What letter yo?</p>
-        <input type="text" name="letter" id="letterGuess">
-        <input type="button" value="Submit" onclick="guess()">
-    </form>
-    <div>
+</div>
+<form name="form2">
+    <p>What letter yo?</p>
+    <input type="text" name="letter" id="letterGuess">
+    <input type="button" value="Submit" onclick="guess()">
+</form>
+<div>
     <img src="Images/Hangmanoutline2.jpg" height = "400" width="400">
-    </div>
+</div>
 </body>
-
