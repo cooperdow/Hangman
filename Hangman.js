@@ -57,10 +57,9 @@ function guess()
             revealedLetters[i] = guess;
         }
     }
-        if(counter == 0)
+    if(counter == 0)
         {
             wrongGuesses = wrongGuesses + 1;
-            alert(wrongGuesses);
             $('#incorrectGuesses').text("Incorrect Guesses: " + wrongGuesses);
         }
 
