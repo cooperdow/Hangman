@@ -8,6 +8,7 @@ function greet()
 
 function blankify()
 {
+    string = new String();
     secretLetters = new Array();
       for (var i = 0; i < words[rand].length; i++)
         {
@@ -16,9 +17,10 @@ function blankify()
     for (var i = 0; i <words[rand].length; i++)
         {
             revealedLetters.push("_");
+            string = string + " _";
         }
     //revealedLetters = revealedLetters.join(" ");
-      $('#test2').text(revealedLetters);
+      $('#test2').text(string);
 
     for (var i = 0; i < secretLetters.length; i++)
         {
@@ -50,11 +52,12 @@ function guess()
             var i = i;
             alert(i);
             revealedLetters[i] = guess;
+            string
             alert(revealedLetters[i]);
             alert(secretLetters[i]);
             revealedLetters[i] = guess;
         }
     }
     alert(revealedLetters);
-    $('#test2').text(revealedLetters);
+    $('#test2').text(string);
 }
