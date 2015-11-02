@@ -64,5 +64,22 @@ function guess()
             wrongLetters.push(guess);
             $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
         }
+    if (wrongGuesses == 6)
+    {
+        alert("Game Over. You Lose.")
+    }
+    for(var i = 0; i< revealedLetters.length; i++)
+    {
+        var counter2 = 0;
+        if (revealedLetters[i] == "_")
+        {
+            counter2++;
+        }
+    }
     $('#test2').text(string);
+    if(counter2 == 0)
+    {
+        alert("You Win!");
+    }
+    hang();
 }
