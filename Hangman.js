@@ -1,6 +1,7 @@
 var rand;
 var wrongGuesses = 0;
 var revealedLetters = new Array();
+var wrongLetters= new Array();
 function greet()
 {
     $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
@@ -60,34 +61,8 @@ function guess()
     if(counter == 0)
         {
             wrongGuesses = wrongGuesses + 1;
+            wrongLetters.push(wrongGuesses);
             $('#incorrectGuesses').text("Incorrect Guesses: " + wrongGuesses);
         }
-    if (wrongGuesses == 6)
-    {
-        alert("Game Over. You Lose.")
-    }
-    for(var i = 0; i< revealedLetters.length; i++)
-    {
-        var counter2 = 0;
-        if (revealedLetters[i] == "_")
-        {
-            counter2++;
-        }
-    }
-
-
     $('#test2').text(string);
-    if(counter2 == 0)
-    {
-        alert("You Win!");
-    }
-    hang();
-}
-
-function hang()
-{
-    if (wrongGuesses == 1)
-    {
-j
-    }
 }
