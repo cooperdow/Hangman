@@ -61,8 +61,8 @@ function guess()
     if(counter == 0)
         {
             wrongGuesses = wrongGuesses + 1;
-            wrongLetters.push(wrongGuesses);
-            $('#incorrectGuesses').text("Incorrect Guesses: " + wrongGuesses);
+            wrongLetters.push(guess);
+            $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
         }
     $('#test2').text(string);
 }
