@@ -34,6 +34,8 @@ function blankify()
 
 function compWord()
 {
+    wrongLetters = [];
+    wrongGuesses = 0;
     secretLetters=[];
     revealedLetters=[];
     rand=Math.floor(Math.random()*words.length);
