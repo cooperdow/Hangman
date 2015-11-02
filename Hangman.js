@@ -1,6 +1,7 @@
 var rand;
 var wrongGuesses = 0;
 var revealedLetters = new Array();
+var wrongLetters= new Array();
 function greet()
 {
     $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
@@ -60,11 +61,8 @@ function guess()
     if(counter == 0)
         {
             wrongGuesses = wrongGuesses + 1;
+            wrongLetters.push(wrongGuesses);
             $('#incorrectGuesses').text("Incorrect Guesses: " + wrongGuesses);
         }
-
     $('#test2').text(string);
-
 }
-
-//could add a new array of incorrect guesses called wrongLetters and then .push wrongGuesses to it
