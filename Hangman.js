@@ -66,3 +66,5 @@ function guess()
     $('#test2').text(string);
 
 }
+
+//could add a new array of incorrect guesses called wrongLetters and then .push wrongGuesses to it
