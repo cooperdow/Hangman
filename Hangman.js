@@ -57,19 +57,14 @@ function guess()
             revealedLetters[i] = guess;
         }
     }
-        if(counter == 0)
+    if(counter == 0)
         {
             wrongGuesses = wrongGuesses + 1;
             $('#incorrectGuesses').text("Incorrect Guesses: " + wrongGuesses);
-        //if(counter==6)
-        //{
-        //    gameOver();
-        //}
+        }
 
     $('#test2').text(string);
 
 }
-//function gameOver()
-//{
-//    $('lose').text("You lose");
-//}
+
+//could add a new array of incorrect guesses called wrongLetters and then .push wrongGuesses to it
