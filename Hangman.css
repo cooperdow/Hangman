@@ -13,3 +13,8 @@ body
 {
     color: red;
 }
+#lose
+{
+    color: white;
+    background-color: red;
+}
