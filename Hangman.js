@@ -36,6 +36,7 @@ function compWord()
 {
     wrongLetters = [];
     wrongGuesses = 0;
+    counter2 = 0;
     secretLetters=[];
     revealedLetters=[];
     rand=Math.floor(Math.random()*words.length);
@@ -72,8 +73,8 @@ function guess()
     }
     for(var i = 0; i< revealedLetters.length; i++)
     {
-        var counter2 = 0;
-        if (revealedLetters[i] == "_")
+        counter2 = 0;
+        if (revealedLetters[i] === "_")
         {
             counter2++;
         }
