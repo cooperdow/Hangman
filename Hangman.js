@@ -88,6 +88,6 @@ function hang()
 {
     if (wrongGuesses == 1)
     {
-
+j
     }
 }
