@@ -62,7 +62,32 @@ function guess()
             wrongGuesses = wrongGuesses + 1;
             $('#incorrectGuesses').text("Incorrect Guesses: " + wrongGuesses);
         }
+    if (wrongGuesses == 6)
+    {
+        alert("Game Over. You Lose.")
+    }
+    for(var i = 0; i< revealedLetters.length; i++)
+    {
+        var counter2 = 0;
+        if (revealedLetters[i] == "_")
+        {
+            counter2++;
+        }
+    }
+
 
     $('#test2').text(string);
+    if(counter2 == 0)
+    {
+        alert("You Win!");
+    }
+    hang();
+}
 
+function hang()
+{
+    if (wrongGuesses == 1)
+    {
+
+    }
 }
