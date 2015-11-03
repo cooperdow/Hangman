@@ -82,7 +82,7 @@ function guess()
     $('#test2').text(string);
     if(counter2 == 0)
     {
-        alert("You Win!");
+        $('#katerox').text("You Win!");
     }
     hang();
 }
