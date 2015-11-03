@@ -6,7 +6,7 @@ body
 {
     color: white;
     text-align: center;
-  background-image: url(Images/Hangmanbackground.jpg)
+  background: url(Images/Hangmanbackground.jpg)
 }
 
 #lose

@@ -36,6 +36,7 @@ function compWord()
 {
     wrongLetters = [];
     wrongGuesses = 0;
+    counter2 = 0;
     secretLetters=[];
     revealedLetters=[];
     rand=Math.floor(Math.random()*words.length);
@@ -61,18 +62,18 @@ function guess()
         }
     }
     if(counter == 0)
-        {
-            wrongGuesses = wrongGuesses + 1;
-            wrongLetters.push(guess);
-            $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
-        }
+    {
+        wrongGuesses = wrongGuesses + 1;
+        wrongLetters.push(guess);
+        $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
+    }
     if (wrongGuesses == 6)
     {
-        alert("Game Over. You Lose.")
+        $('#rocks').text("Game Over. You Lose. The word was " + words[rand]);
     }
+    counter2 = 0;
     for(var i = 0; i< revealedLetters.length; i++)
     {
-        var counter2 = 0;
         if (revealedLetters[i] == "_")
         {
             counter2++;
@@ -81,7 +82,7 @@ function guess()
     $('#test2').text(string);
     if(counter2 == 0)
     {
-        alert("You Win!");
+        $('#rocks').text("You Win!");
     }
     hang();
 }
