@@ -69,12 +69,12 @@ function guess()
         }
     if (wrongGuesses == 6)
     {
-        alert("Game Over. You Lose.")
+        $('#katerox').text("Game Over. You Lose. The word was " + words[rand]);
     }
+    counter2 = 0;
     for(var i = 0; i< revealedLetters.length; i++)
     {
-        counter2 = 0;
-        if (revealedLetters[i] === "_")
+        if (revealedLetters[i] == "_")
         {
             counter2++;
         }
@@ -82,7 +82,7 @@ function guess()
     $('#test2').text(string);
     if(counter2 == 0)
     {
-        alert("You Win!");
+        $('#katerox').text("You Win!");
     }
     hang();
 }
