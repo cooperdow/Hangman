@@ -2,7 +2,8 @@ var rand;
 var wrongGuesses = 0;
 var revealedLetters = new Array();
 var wrongLetters= new Array();
-$("#head").ready(function(){
+
+$(document).ready(function(){
     $("#head").hide();
 });
 function greet()
