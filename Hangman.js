@@ -77,7 +77,7 @@ function guess()
 
     if (wrongGuesses == 6)
     {
-        $('#katerox').text("Game Over. You Lose. The word was " + words[rand]);
+        $('#rocks').text("Game Over. You Lose. The word was " + words[rand]);
     }
     counter2 = 0;
     for(var i = 0; i< revealedLetters.length; i++)
@@ -90,7 +90,7 @@ function guess()
     $('#test2').text(string);
     if(counter2 == 0)
     {
-        $('#katerox').text("You Win!");
+        $('#rocks').text("You Win!");
     }
     hang();
 }
