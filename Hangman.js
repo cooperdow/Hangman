@@ -14,26 +14,26 @@ function blankify()
 {
     string = new String();
     secretLetters = new Array();
-      for (var i = 0; i < words[rand].length; i++)
-        {
-            secretLetters.push(words[rand].substring(i, i+1));
-        }
+    for (var i = 0; i < words[rand].length; i++)
+    {
+        secretLetters.push(words[rand].substring(i, i+1));
+    }
     for (var i = 0; i <words[rand].length; i++)
-        {
-            revealedLetters.push("_");
-            string = string + " _";
-        }
+    {
+        revealedLetters.push("_");
+        string = string + " _";
+    }
     //revealedLetters = revealedLetters.join(" ");
-      $('#test2').text(string);
+    $('#test2').text(string);
 
     for (var i = 0; i < secretLetters.length; i++)
-        {
+    {
         if(secretLetters[i] === document.form.letters.value)
-            {
+        {
 
-            }
         }
     }
+}
 
 function compWord()
 {
@@ -67,11 +67,11 @@ function guess()
         }
     }
     if(counter == 0)
-        {
-            wrongGuesses = wrongGuesses + 1;
-            wrongLetters.push(guess);
-            $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
-        }
+    {
+        wrongGuesses = wrongGuesses + 1;
+        wrongLetters.push(guess);
+        $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
+    }
     if (wrongGuesses == 1)
     {
         $("#head").show();
@@ -107,12 +107,12 @@ function guess()
     }
     if (wrongGuesses == 6)
     {
-            $("#head").show();
-            $("#torso").show();
-            $("#leftleg").show();
-            $("#rightleg").show();
-            $("#leftarm").show();
-            $("#rightarm").show();
+        $("#head").show();
+        $("#torso").show();
+        $("#leftleg").show();
+        $("#rightleg").show();
+        $("#leftarm").show();
+        $("#rightarm").show();
         $('#rocks').text("Game Over. You Lose. The word was " + words[rand]);
     }
     counter2 = 0;

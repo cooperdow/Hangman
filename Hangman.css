@@ -1,12 +1,12 @@
 h1
 {
- text-align: center;   
+    text-align: center;
 }
 body
 {
     color: white;
     text-align: center;
-  background: url(Images/Hangmanbackground.jpg)
+    background: url(Images/Hangmanbackground.jpg)
 }
 
 #lose
@@ -78,4 +78,3 @@ body
     display:none;
 
 }
-
