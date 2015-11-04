@@ -2,6 +2,10 @@ var rand;
 var wrongGuesses = 0;
 var revealedLetters = new Array();
 var wrongLetters= new Array();
+
+$(document).ready(function(){
+    $("#head").hide();
+});
 function greet()
 {
     $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
@@ -34,6 +38,7 @@ function blankify()
 
 function compWord()
 {
+
     wrongLetters = [];
     wrongGuesses = 0;
     counter2 = 0;
@@ -46,6 +51,7 @@ function compWord()
 
 function guess()
 {
+
     var counter=0;
     var guess = document.form2.letter.value;
     for(var i = 0; i< secretLetters.length; i++)
@@ -62,14 +68,16 @@ function guess()
         }
     }
     if(counter == 0)
-    {
-        wrongGuesses = wrongGuesses + 1;
-        wrongLetters.push(guess);
-        $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
-    }
+        {
+            wrongGuesses = wrongGuesses + 1;
+            wrongLetters.push(guess);
+            $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
+            $("#head").show();
+        }
+
     if (wrongGuesses == 6)
     {
-        $('#rocks').text("Game Over. You Lose. The word was " + words[rand]);
+        $('#katerox').text("Game Over. You Lose. The word was " + words[rand]);
     }
     counter2 = 0;
     for(var i = 0; i< revealedLetters.length; i++)
@@ -82,7 +90,7 @@ function guess()
     $('#test2').text(string);
     if(counter2 == 0)
     {
-        $('#rocks').text("You Win!");
+        $('#katerox').text("You Win!");
     }
     hang();
 }
