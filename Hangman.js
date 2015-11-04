@@ -71,9 +71,17 @@ function guess()
             wrongGuesses = wrongGuesses + 1;
             wrongLetters.push(guess);
             $('#wrongLettersBox').text("Incorrect Letters: " + wrongLetters);
-            $("#head").show();
         }
+    if (wrongGuesses == 1)
+    {
+        $("#head").show();
+    }
+    if (wrongGuesses == 2)
+    {
 
+        $("#head").show();
+        $("#torso").show();
+    }
     if (wrongGuesses == 6)
     {
         $('#rocks').text("Game Over. You Lose. The word was " + words[rand]);

@@ -23,7 +23,7 @@ body
 {
     text-align: center;
     position:absolute;
-    top: 56%;
+    top: 57%;
     height: 60px;
     right: 44%;
     display:none;
@@ -32,9 +32,9 @@ body
 {
     text-align: center;
     position:absolute;
-    top: 56%;
-    height: 60px;
-    right: 44%;
-    /*display:none;*/
+    top: 51%;
+    height: 500px;
+    right: 21%;
+    display:none;
 
 }
