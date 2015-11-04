@@ -26,7 +26,7 @@ body
     top: 62%;
     height: 60px;
     right: 44%;
-    /*display:none;*/
+    display:none;
 }
 #torso
 {
@@ -35,7 +35,7 @@ body
     top: 56%;
     height: 500px;
     right: 21%;
-    /*display:none;*/
+    display:none;
 
 }
 #leftleg
@@ -45,7 +45,7 @@ body
     top: 52%;
     height: 500px;
     right: 21%;
-    /*display:none*/
+    display:none
 
 }
 #rightleg
@@ -55,7 +55,27 @@ body
     top: 52%;
     height: 500px;
     right: 21%;
-    /*display:none;*/
+    display:none;
+
+}
+#leftarm
+{
+    text-align: center;
+    position:absolute;
+    top: 56%;
+    height: 500px;
+    right: 21.5%;
+    display:none
+
+}
+#rightarm
+{
+    text-align: center;
+    position:absolute;
+    top: 56%;
+    height: 500px;
+    right: 20.5%;
+    display:none;
 
 }
 

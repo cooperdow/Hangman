@@ -44,7 +44,7 @@ function compWord()
     secretLetters=[];
     revealedLetters=[];
     rand=Math.floor(Math.random()*words.length);
-    $('#test').text(words[rand]);
+    //$('#test').text(words[rand]);
     blankify();
 }
 
@@ -82,8 +82,37 @@ function guess()
         $("#head").show();
         $("#torso").show();
     }
+    if (wrongGuesses == 3)
+    {
+        $("#head").show();
+        $("#torso").show();
+        $("#leftleg").show();
+
+    }
+    if (wrongGuesses == 4)
+    {
+        $("#head").show();
+        $("#torso").show();
+        $("#leftleg").show();
+        $("#rightleg").show();
+    }
+    if (wrongGuesses == 5)
+    {
+        $("#head").show();
+        $("#torso").show();
+        $("#leftleg").show();
+        $("#rightleg").show();
+        $("#leftarm").show();
+
+    }
     if (wrongGuesses == 6)
     {
+            $("#head").show();
+            $("#torso").show();
+            $("#leftleg").show();
+            $("#rightleg").show();
+            $("#leftarm").show();
+            $("#rightarm").show();
         $('#rocks').text("Game Over. You Lose. The word was " + words[rand]);
     }
     counter2 = 0;
