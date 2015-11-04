@@ -3,11 +3,10 @@ var wrongGuesses = 0;
 var revealedLetters = new Array();
 var wrongLetters= new Array();
 
-$(document).ready(function(){
-    $("#head").hide();
-});
+
 function greet()
 {
+
     $("#hello").text("Hi " + document.form.fullName.value + "! Ready to play Hangman?");
 }
 

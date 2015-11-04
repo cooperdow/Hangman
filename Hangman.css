@@ -17,15 +17,24 @@ body
 
 #wrongLettersBox
 {
-    color: red;
+    color: white;
 }
 #head
 {
     text-align: center;
     position:absolute;
-    top: 60%;
+    top: 56%;
     height: 60px;
     right: 44%;
-    /*z-index:+1;*/
+    display:none;
+}
+#torso
+{
+    text-align: center;
+    position:absolute;
+    top: 56%;
+    height: 60px;
+    right: 44%;
+    /*display:none;*/
 
 }
