@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b323ffe-dcb6-42bb-a573-b55dc35ac70e" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;Hangman.js&#10;">
+    <list default="true" id="4b323ffe-dcb6-42bb-a573-b55dc35ac70e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hangman.HTML" afterPath="$PROJECT_DIR$/Hangman.HTML" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hangman.css" afterPath="$PROJECT_DIR$/Hangman.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hangman.js" afterPath="$PROJECT_DIR$/Hangman.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Hangman.iws" />
@@ -29,27 +29,27 @@
         <entry file="file://$PROJECT_DIR$/Hangman.HTML">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-28.384615">
-              <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+              <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hangman.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hangman.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hangman.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56666666">
+            <state vertical-scroll-proportion="0.0">
               <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hangman.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Hangman.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hangman.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.37666667">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -75,9 +75,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Kate Rocks.txt" />
+        <option value="$PROJECT_DIR$/Hangman.js" />
         <option value="$PROJECT_DIR$/Hangman.HTML" />
         <option value="$PROJECT_DIR$/Hangman.css" />
-        <option value="$PROJECT_DIR$/Hangman.js" />
       </list>
     </option>
   </component>
@@ -153,7 +153,6 @@
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/Hangman.HTML</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/Hangman.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Hangman.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -492,7 +491,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446668634944</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;Hangman.js&#10;">
+      <created>1446669093806</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1446669093806</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -775,23 +780,23 @@
     <entry file="file://$PROJECT_DIR$/Hangman.HTML">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.384615">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hangman.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hangman.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56666666">
+        <state vertical-scroll-proportion="0.0">
           <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hangman.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37666667">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding />
         </state>
       </provider>
